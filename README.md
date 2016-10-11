@@ -11,6 +11,9 @@ I am trying to give you example : Lets take we have created Dynamic-cluster with
 Maximum Number of Dynamic Servers: parameter from Admin Console to 6 through Summary of Clusters >DynamicCluster >Summary of Servers navigation , so another 2 Managed servers will be created dynamically with the same configurations of already existed with 4 Servers.
 Now we need to bring up two new Managed-servers just now we have created, so now all the 6 JVM's will take the Load.
 
+http://docs.oracle.com/middleware/1213/wls/CLUST/dynamic_clusters.htm#CLUST709
+
+
 2) Does the"dynamic server list" parameter in webserver has any link with weblogic dynamic clusters, knowing that webserver wont collect information of servers which are not running untill a peak loaded is reached.
 According to above example , we will update ManagedServers information of Dynamic-Cluster in Webserver like (ip:port,ip:port,ip:port,ip:port) , in Peakload after we have included 2 more new JVM's into the Dynamic-Cluster and they are Up and Running
 Now no need to update webserver with 2 New JVM's Ip:port information , because as we have discussed earlier bydefault DynamicServerList option will be on at Webserver Level , so Weblogic is Sending the response back to the webserver ( including with response List of all the servers in
